@@ -54,13 +54,13 @@ public class LifeCycleBeanDemo implements InitializingBean, DisposableBean, Bean
 
 	@Override
 	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-		System.out.println("setBeanFactory");
+		System.out.println("##  setBeanFactory");
 
 	}
 
 	@Override
 	public void setBeanName(String name) {
-		System.out.println("Bean Name : " + name);
+		System.out.println("## Bean Name : " + name);
 
 	}
 
@@ -72,7 +72,7 @@ public class LifeCycleBeanDemo implements InitializingBean, DisposableBean, Bean
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("afterPropertiesSet");
+		System.out.println("## afterPropertiesSet");
 
 	}
 
